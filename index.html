@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Portfolio</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-weight: lighter;
+        }
+
+        h2,
+        h3 {
+            margin-top: 1em;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            margin-top: 0.5em;
+            padding: 0;
+            padding-right: 0.52em;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 0.5em;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #f2f2f2;
+            padding-left: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav {
+            margin-left: 1em;
+            margin-top: 2em;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav a {
+            color: #666;
+        }
+
+        nav a:hover {
+            color: #333;
+        }
+
+        /* Main styles */
+        main {
+            max-width: 45em;
+            margin: 0 auto;
+            padding: 2em;
+        }
+
+        .references {
+            font-size: smaller;
+        }
+
+        /* Icon links styles */
+        .icon-links {
+            display: flex;
+            justify-content: center;
+        }
+
+        .icon-links a {
+            display: inline-block;
+            width: 1.6em;
+            height: 1.6em;
+            margin-right: 1em;
+            border-radius: 50%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            line-height: 2.5em;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .icon-links a:hover {
+            transform: scale(1.1);
+        }
+
+        .icon-links img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Social media icon links styles */
+        #gh-link {
+            background-color: #fff;
+        }
+
+        #tg-link {
+            background-color: #0088cc;
+        }
+
+        #email {
+            background-color: #d9534f;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+
+        #contact h2 {
+            margin-bottom: 0;
+        }
+
+        #about h2 {
+            margin-top: 0;
+        }
+
+        h3 {
+            color: #666;
+            font-size: 1.1em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 1em;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Vitaly's Portfolio</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a student currently studying in Innopolis.</p>
+
+            <h3>Background</h3>
+            <ul>
+                <li>Software development and architecture</li>
+                <li>Game development and computer graphics</li>
+                <li>UX/UI design</li>
+                <li>Cryptography</li>
+                <li>Embedded and hardware development</li>
+                <li>3D modeling and printing</li>
+                <li>Backend development</li>
+            </ul>
+
+            <h3>Tools and Technologies</h3>
+            <ul>
+                <li>Environment: Git, Docker, Docker-Compose, Github, GitLab, CI/CD, venv, poetry</li>
+                <li>Editors: VS Code and Visual Studio</li>
+                <li>Languages: Lua, Solidity, Python, Dart, C/C++, SQL, Kotlin, Java, GLSL, JS, C#
+                </li>
+                <li>Tech stack: Flutter, Qt, GTK, SFML, OpenGL, ESP IDE, NRF SDK, Arduino, Pyrogram,
+                    Web3, Solar SDK,
+                    Godot, Unity, Unreal Engine, 3DMax, Blender, EasyEDA, Cura</li>
+                <li>System stack: Yandex Cloud, Firebase, Postgres, MongoDB, Kafka, RabbitMQ,
+                    Mosquitto, Linux/Windows
+                </li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <h3>GitHub</h3>
+            <ul>
+                <li><a href="https://github.com/Senopiece/gpu_particles">Engine for particle simulations</a></li>
+                <li><a href="https://github.com/Senopiece/face_input">Face Input Flutter plugin</a></li>
+                <li><a href="https://github.com/Senopiece/fcmp">Face-Controlled Video Player (uses the plugin above)</a>
+                </li>
+                <li><a href="https://github.com/Senopiece/watermelon">Automatic Irrigation on Arduino</a></li>
+                <li><a href="https://github.com/Senopiece/watermelon_glasses">GUI client for the above project</a></li>
+                <li><a href="https://github.com/Senopiece/aistat">Accompaniment Generator for MIDI Music</a></li>
+                <li><a href="https://github.com/Senopiece?tab=repositories">A telegram userbot to collect statistical
+                        info about a chat</a></li>
+                <li><a href="https://github.com/Senopiece/SaveTheBall">Time-Killer Game</a></li>
+                <li><a href="https://github.com/Senopiece/cnj">App with Chuck Norris Jokes lol</a></li>
+                <li><a href="https://github.com/InnoSWP/cvparser_b21_01">CV Parser</a></li>
+                <li><a href="https://github.com/Senopiece/annealed_path">Path Annealing Visualizer</a></li>
+                <li><em>Additional private and commercial projects are not listed here due to their restricted access or
+                        lack of public repository.</em></li>
+            </ul>
+            <h3>GitLab</h3>
+            <ul>
+                <li><em>I'm sorry, but since my GitLab account is mainly used for work purposes, all the content on it
+                        is all private.</em></li>
+            </ul>
+        </section>
+        <footer>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <div class="icon-links">
+                    <!-- sorry for mixing cdn images and base64, im just too lazy to find a proper cdn image of mail icon -->
+                    <a id="gh-link" href="https://github.com/Senopiece"><img
+                            src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/external-github-with-cat-logo-an-online-community-for-software-development-logo-bold-tal-revivo.png"
+                            alt="GitHub"></a>
+                    <a id="tg-link" href="https://t.me/tNabuki"><img
+                            src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/external-telegram-messenger-privately-held-company-with-cloud-based-instant-messaging-logo-color-tal-revivo.png"
+                            alt="Telegram"></a>
+                    <a id="email" href="shichiromail@gmail.com"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEUlEQVR4nO2YT08TQRiHe8EDJMSI3AgogpF/B/kMJpIaD/xtiyESblwIByB8Czw1JnwaznAlMQEVkFDwAwha8DFvMkteh+6W7s4sl3mSHrr7dub37M7sTLdQCAQCgUAgEPAP0Ab0AP2eP10+wj8GDsiPXaDDtcQr4CyH8D+BMVehXwMT6vsIcO4x/AUwqvp7k0kG2AQugaI6NgzUPIQ/l7ZVP2+BX8BaFoFPpvEr4L3H4VQDhlT7RXPhhK0sAlXVyW9gUp17CZx6uPJFFV6ouhIQroF5dX4wo0TNCv/O3G18CUQSH1TNM+B7ivA/gAHVzgzwp0Gdc4FIYkHV9QHfWgh/YoWfjQnvTSCS+JhCQsK/UL8rAfWEem8Cwg2wqOp7ga8J9cdW+HKT8N4FhL/AsiVxGBO+X9UtmQvAQwv892RSEvuq5oscs2rmzW8fVEACVFT97QYMaJdV1KzmnTE1lXtIeBOQsVtuMIlXEtpbBY6soVRpIuFFwA5vrwWfgafqfDewnTAfygmT2bmAdFRKCB8h24E9s7fXW4O4x2k5RsLrVqLZYzPNalz3JdAofCurb1qJahaBLdOILPMz1rCRyeiKE2s4zSmJTNvpdRN+Wh177jh83J2IJDayCIwBUzmEj5OQTd54agFLptUdp5N/Z04AHgE75Me+89cqRuRJDi+2euQlmvPwgUAgEAgEAoU7/AOvlTGoaRwKqQAAAABJRU5ErkJggg=="
+                            alt="Email"></a>
+                </div>
+                <div class="references">
+                    Icons by <a href="https://icons8.com">Icons8</a>
+                </div>
+            </section>
+        </footer>
+    </main>
+</body>
+
+</html>
