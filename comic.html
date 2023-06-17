@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>XKCD Comic Viewer</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>XKCD Comic Viewer</h1>
+    <div id="comic-container">Loading...</div>
+    <script>
+        const email = 'v.mahonin@innopolis.university';
+        const hw2Url = `https://fwd.innopolis.university/api/hw2?email=${email}`;
+
+        fetch(hw2Url)
+            .then(response => response.text())
+            .then(id => {
+                const comicUrl = `https://fwd.innopolis.university/api/comic?id=${id}`;
+                return fetch(comicUrl);
+            })
+            .then(response => response.json())
+            .then(data => {
+                const comicContainer = document.getElementById('comic-container');
+                comicContainer.innerHTML = "";
+
+                const img = document.createElement('img');
+                img.src = data.img;
+                img.alt = data.alt;
+                comicContainer.appendChild(img);
+
+                const title = document.createElement('h2');
+                title.textContent = data.safe_title;
+                comicContainer.appendChild(title);
+
+                const date = document.createElement('p');
+                const publishedDate = new Date(`${data.year}-${data.month}-${data.day}`);
+                date.textContent = publishedDate.toLocaleDateString();
+                comicContainer.appendChild(date);
+            })
+            .catch(error => console.error(error));
+    </script>
+</body>
+
+</html>
