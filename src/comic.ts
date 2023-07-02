@@ -36,4 +36,10 @@ fetch(hw2Url)
             comicContainer.appendChild(timeAgoElement);
         }
     })
-    .catch((error: Error) => console.error(error));
+    .catch((error: Error) => {
+        console.error(error);
+        const comicContainer: HTMLElement | null = document.getElementById('comic-container');
+        if (comicContainer) {
+            comicContainer.innerHTML = "Error";
+        }
+    });
