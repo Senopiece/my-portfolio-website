@@ -29,18 +29,12 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
-      - name: Make public dir
-        run: mkdir public
-      - name: Copy index & comic to public
-        run: cp index.html public/ && cp comic.html public/
-      - name: Copy bundle.js to public
-        run: cp dist/bundle.js public/
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./public
+          source: ./
           destination: ./_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
