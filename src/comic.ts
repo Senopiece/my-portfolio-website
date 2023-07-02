@@ -1,13 +1,13 @@
 import { formatDistanceToNow } from 'date-fns';
-import { ComicResponse, Hw2Response } from './interfaces';
+import { ComicResponse } from './interfaces';
 
 const email: string = 'v.mahonin@innopolis.university';
 const hw2Url: string = `https://fwd.innopolis.university/api/hw2?email=${email}`;
 
 fetch(hw2Url)
-    .then((response: Response) => response.json() as Promise<Hw2Response>)
-    .then((hw2Response: Hw2Response) => {
-        const comicUrl: string = `https://fwd.innopolis.university/api/comic?id=${hw2Response.id}`;
+    .then((response: Response) => response.text())
+    .then((id: string) => {
+        const comicUrl: string = `https://fwd.innopolis.university/api/comic?id=${id}`;
         return fetch(comicUrl);
     })
     .then((response: Response) => response.json() as Promise<ComicResponse>)

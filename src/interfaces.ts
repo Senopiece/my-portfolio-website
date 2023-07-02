@@ -6,7 +6,3 @@ export interface ComicResponse {
     month: string;
     day: string;
 }
-
-export interface Hw2Response {
-    id: string;
-}
