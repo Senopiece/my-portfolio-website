@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import Footer from '../components/Footer.svelte';
 	const str = "Vitaly's Portfolio";
 </script>
@@ -7,8 +8,8 @@
 	<h1>{str}</h1>
 	<nav id="pages_nav">
 		<ul>
-			<li><a href="/">portfolio</a></li>
-			<li><a href="/comic">comic</a></li>
+			<li><a href="{base}/">portfolio</a></li>
+			<li><a href="{base}/comic">comic</a></li>
 		</ul>
 	</nav>
 	<style>

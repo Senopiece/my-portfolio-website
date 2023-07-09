@@ -12,7 +12,7 @@
 			alt="Telegram"
 		/>
 	</a>
-	<a id="email" href="shichiromail@gmail.com">
+	<a id="email" href="mailto:shichiromail@gmail.com">
 		<img
 			src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAACEUlEQVR4nO2YT08TQRiHe8EDJMSI3AgogpF/B/kMJpIaD/xtiyESblwIByB8Czw1JnwaznAlMQEVkFDwAwha8DFvMkteh+6W7s4sl3mSHrr7dub37M7sTLdQCAQCgUAgEPAP0Ab0AP2eP10+wj8GDsiPXaDDtcQr4CyH8D+BMVehXwMT6vsIcO4x/AUwqvp7k0kG2AQugaI6NgzUPIQ/l7ZVP2+BX8BaFoFPpvEr4L3H4VQDhlT7RXPhhK0sAlXVyW9gUp17CZx6uPJFFV6ouhIQroF5dX4wo0TNCv/O3G18CUQSH1TNM+B7ivA/gAHVzgzwp0Gdc4FIYkHV9QHfWgh/YoWfjQnvTSCS+JhCQsK/UL8rAfWEem8Cwg2wqOp7ga8J9cdW+HKT8N4FhL/AsiVxGBO+X9UtmQvAQwv892RSEvuq5oscs2rmzW8fVEACVFT97QYMaJdV1KzmnTE1lXtIeBOQsVtuMIlXEtpbBY6soVRpIuFFwA5vrwWfgafqfDewnTAfygmT2bmAdFRKCB8h24E9s7fXW4O4x2k5RsLrVqLZYzPNalz3JdAofCurb1qJahaBLdOILPMz1rCRyeiKE2s4zSmJTNvpdRN+Wh177jh83J2IJDayCIwBUzmEj5OQTd54agFLptUdp5N/Z04AHgE75Me+89cqRuRJDi+2euQlmvPwgUAgEAgEAoU7/AOvlTGoaRwKqQAAAABJRU5ErkJggg=="
 			alt="Email"
