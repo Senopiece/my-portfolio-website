@@ -10,8 +10,8 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: process.env.NODE_ENV === "production" ? "/my-portfolio-website" : "",
-		},
+			base: process.env.NODE_ENV === 'production' ? '/my-portfolio-website' : ''
+		}
 	}
 };
 
