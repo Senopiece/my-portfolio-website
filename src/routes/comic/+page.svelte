@@ -1,21 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import Comic from '../../components/Comic.svelte';
-	import type { ComicData } from '../../interfaces';
+	import type { ComicData, Id } from '../../interfaces';
 
-	const email = 'v.mahonin@innopolis.university';
-	const hw2Url = `https://fwd.innopolis.university/api/hw2?email=${email}`;
-
+	export let data: Id; // id from the server
 	let comicData: ComicData;
 	let isError = false;
 
 	onMount(() => {
-		fetch(hw2Url)
-			.then((response: Response) => response.text())
-			.then((id: string) => {
-				const comicUrl = `https://fwd.innopolis.university/api/comic?id=${id}`;
-				return fetch(comicUrl);
-			})
+		fetch(`https://fwd.innopolis.university/api/comic?id=${data.id}`)
 			.then((response: Response) => response.json() as Promise<ComicData>)
 			.then((data: ComicData) => {
 				comicData = data;

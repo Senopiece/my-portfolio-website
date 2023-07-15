@@ -18,6 +18,10 @@ export interface NavigationLink {
 	url: string;
 }
 
+export interface Id {
+	id: string;
+}
+
 export type NavigationsListMap = {
 	[key: string]: NavigationLink[];
 };
