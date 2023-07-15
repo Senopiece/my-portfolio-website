@@ -9,9 +9,6 @@ const config = {
 
 	kit: {
 		adapter: cloudflare(),
-		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/my-portfolio-website' : ''
-		}
 	}
 };
 
