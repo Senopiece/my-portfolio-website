@@ -1,32 +1,15 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import Comic from '../../components/Comic.svelte';
-	import type { ComicData, Id } from '../../interfaces';
+	import type { ComicData } from '../../interfaces';
 
-	export let data: Id; // id from the server
-	let comicData: ComicData;
-	let isError = false;
-
-	onMount(() => {
-		fetch(`https://fwd.innopolis.university/api/comic?id=${data.id}`)
-			.then((response: Response) => response.json() as Promise<ComicData>)
-			.then((data: ComicData) => {
-				comicData = data;
-			})
-			.catch((error: Error) => {
-				console.error(error);
-				isError = true;
-			});
-	});
+	export let data: ComicData;
 </script>
 
 <title>XKCD Comic Viewer</title>
 <body>
 	<h1>XKCD Comic Viewer</h1>
-	{#if isError}
-		<p>Error</p>
-	{:else if comicData}
-		<Comic {comicData} />
+	{#if data}
+		<Comic comicData={data} />
 	{:else}
 		<p>Loading...</p>
 	{/if}
