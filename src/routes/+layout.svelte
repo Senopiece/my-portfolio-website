@@ -5,6 +5,9 @@
 </script>
 
 <header>
+	<meta name="author" content="Vitaly Mahonin" />
+	<meta name="description" content="FWD Course Homework" />
+
 	<h1>{str}</h1>
 	<nav id="pages_nav">
 		<ul>
