@@ -23,8 +23,8 @@
 		tools: [
 			'Environment: Git, Docker, Docker-Compose, Github, GitLab, CI/CD, venv, poetry',
 			'Editors: VS Code and Visual Studio',
-			'Languages: Lua, Solidity, Python, Dart, C/C++, SQL, Kotlin, Java, GLSL, JS, C#',
-			'Tech stack: Flutter, Qt, GTK, SFML, OpenGL, ESP IDE, NRF SDK, Arduino, Pyrogram, Web3, Solar SDK, Godot, Unity, Unreal Engine, 3DMax, Blender, EasyEDA, Cura',
+			'Languages: Lua, Solidity, Python, Dart, C/C++, SQL, Kotlin, Java, GLSL, JS, TS, C#',
+			'Tech stack: Flutter, Svelte, React, Qt, GTK, SFML, OpenGL, ESP IDE, NRF SDK, Arduino, Pyrogram, FastAPI, Web3, Solar SDK, Godot, Unity, Unreal Engine, 3DMax, Blender, EasyEDA, Cura',
 			'System stack: Yandex Cloud, Firebase, Postgres, MongoDB, Kafka, RabbitMQ, Mosquitto, Linux/Windows'
 		]
 	};
